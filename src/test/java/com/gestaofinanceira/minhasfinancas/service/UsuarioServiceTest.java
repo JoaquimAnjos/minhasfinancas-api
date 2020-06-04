@@ -21,8 +21,6 @@ import com.gestaofinanceira.minhasfinancas.service.impl.UsuarioServiceImpl;
 @ActiveProfiles("test")
 public class UsuarioServiceTest {
 	
-	//por fazer testes unitários não é colocar o @Autowired
-	
 	@SpyBean
 	UsuarioServiceImpl service;
 	

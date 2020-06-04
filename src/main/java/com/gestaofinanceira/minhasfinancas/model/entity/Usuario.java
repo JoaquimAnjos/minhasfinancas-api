@@ -7,6 +7,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -39,6 +41,7 @@ public class Usuario {
 	//@Setter(AccessLevel.PRIVATE) para não criar setter
 	private String email;
 	
+	@JsonIgnore // para não expor a senha do usuario
 	@Column(name="senha")
 	private String senha;
 	

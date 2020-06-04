@@ -95,9 +95,9 @@ public class LancamentoServiceImpl implements LancamentoService{
 		}
 		
 		//adicionei depois
-		if(lancamento.getStatus() == null) {
+		/*if(lancamento.getStatus() == null) {
 			throw new RegraNegocioException("Informe um status de Lançamento.");
-		}
+		}*/
 	}
 
 	@Override
